@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f74054c1ff9235ee2a4e8c162d934e56",
+    "revision": "f347a69a74d1c799ba6452c6c1121f83",
     "url": "/greenhands/index.html"
   },
   {
-    "revision": "358d669ef80373463589",
+    "revision": "23495097f1710971b493",
     "url": "/greenhands/static/css/main.44e18986.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/greenhands/static/js/3.8b0869b4.chunk.js"
   },
   {
-    "revision": "358d669ef80373463589",
-    "url": "/greenhands/static/js/main.36daf662.chunk.js"
+    "revision": "23495097f1710971b493",
+    "url": "/greenhands/static/js/main.c24c7dd7.chunk.js"
   },
   {
     "revision": "235f1e9751180978754b",
