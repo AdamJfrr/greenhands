@@ -1,0 +1,146 @@
+.calendarContainer {
+  width: 60%;
+  margin: auto;
+  font-family: 'Helvetica Neue',sans-serif;
+}
+
+.monthHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #F3F3E5;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.daysHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px 0;
+  text-align: center;
+  color: #F3F3E5;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  padding: 10px 0;
+}
+
+.emptyDay {
+  width: 40px;
+  height: 40px;
+}
+
+.dayCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #70A481;
+  color: #F3F3E5;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 600;
+}
+
+.dayCircle:hover {
+  background-color: #61E887;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookButton {
+  background-color: #61E887;
+  border: none;
+  color: #413E3E;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 54%;
+  height: 50px;
+  margin-top: 24px;
+  font-size: 17px;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 600;
+}
+.bookButton:disabled {
+  background-color: #61E887;
+  color: #413E3E;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.arrowButton{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 600;
+  color: #F3F3E5;
+}
+.selectedRange {
+  background-color: #61E887;
+  color: #413E3E;
+  transition: background-color 0.3s ease;
+}
+.bookedDay {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.alert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFF80;
+  font-size: 17px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-top: 36px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .calendarContainer{
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .monthHeader{
+    font-size: 14px;
+  }
+  .arrowButton{
+    font-size: 14px;
+  }
+  .calendarContainer{
+    width: 100%;
+  }
+  .dayCircle{
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .daysHeader{
+    font-size: 12px;
+  }
+  .bookButton{
+    width: 80%;
+    font-size: 17px;
+  }
+}
