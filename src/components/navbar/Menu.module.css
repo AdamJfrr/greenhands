@@ -1,0 +1,41 @@
+.menu{
+  height: 32px;
+  font-size: 12px;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px;
+  padding: 12px;
+  border: 1px solid #F3F3E5;
+}
+.link{
+  color: #F3F3E5;
+  text-decoration: none;
+  padding: 24px;
+}
+.signoutbutton{
+  background-color: transparent;
+  border: none;
+  color: #F3F3E5;
+  text-decoration: none;
+  padding: 24px;
+  font-size: 12px;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .menu{
+    border: none;
+  }
+  .link{
+    padding: 18px;
+    font-size: 10px;
+  }
+  .signoutbutton{
+    padding: 18px;
+    font-size: 10px;
+  }
+}
